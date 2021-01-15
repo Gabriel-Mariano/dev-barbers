@@ -14,10 +14,17 @@
     
 }
 
+.content-banner{
+    width:80%;
+    text-align: center;
+}
+
 h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 3em;
     color: aliceblue;
     text-shadow: 1px 1px 4px black;
 }
+
+
 

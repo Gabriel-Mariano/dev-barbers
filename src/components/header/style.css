@@ -32,6 +32,20 @@ header span{
     letter-spacing: 2px;
 }
 
+header button{
+    width:60px;
+    height:35px;
+    background: none;
+    border: none;
+    cursor:pointer;
+    outline: none;
+    display: none;
+}
+
+#button-close{
+    display: none;
+}
+
 .menu-principal {
     width: 40%;
     height: 110px;
@@ -73,5 +87,13 @@ header span{
     header span{
         display: none;
         transition: ease-in-out 0.2s;
+    }
+
+    .menu-principal ul{
+        display: none;
+    }
+
+    header button{
+        display: initial;
     }
 }
