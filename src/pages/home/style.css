@@ -1,5 +1,8 @@
 .banner{
-    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     position: absolute;
     top:0;
     width:100%;
@@ -8,4 +11,13 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    
 }
+
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3em;
+    color: aliceblue;
+    text-shadow: 1px 1px 4px black;
+}
+

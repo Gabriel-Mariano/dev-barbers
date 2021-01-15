@@ -6,8 +6,19 @@ import './style.css';
 function Header(){
     return(
         <header>
-           <img src={Logo} alt="logo"/>
-           <span>BARBERS</span>         
+            <figure className="visual-identity">
+                <img src={Logo} alt="logo"/>
+                <figcaption>
+                {/*    <span>DEV/BARBERS</span> */}
+                </figcaption>
+            </figure>
+           <nav className="menu-principal">
+               <ul>
+                   <li><a href="#">HOME</a></li>
+                   <li><a href="#">SOBRE</a></li>
+                   <li><a href="#">NOSSO APP</a></li>
+               </ul>
+            </nav>         
         </header>
     );
 }

@@ -4,23 +4,64 @@ header{
     height:110px;
     position: absolute;
     z-index: 999;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.visual-identity{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 
 header img{
     float: left;   
     width:60px;
     height:90px;
-    margin-top:10px;
-    margin-left: 60px;
+    margin-right: 20px;
 }
 
 header span{
     float: left;
-    font-family: Poplar STD;
+    font-family: Poplar STD, 'Anton', sans-serif;
     font-size: 2em;
-    margin-top:45px;
-    margin-left:12px;
-    color: #f8f8f8; 
+    color: #f8f8f8;
+    letter-spacing: 2px;
+}
+
+.menu-principal {
+    width: 40%;
+    height: 110px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-principal ul{
+    list-style: none;
+    
+}
+
+.menu-principal ul li{
+    display: inline-block;
+    margin:auto 20px;
+    cursor: pointer;
+}
+
+.menu-principal ul li a{
+    text-decoration: none;
+    font-family: calibri;
+    font-weight: bold;
+    color: #fff;
+    transition: ease-in-out 0.5s;
+}
+
+.menu-principal ul li a:hover{
+    color: #EE3B3B;
 }
 
 /* ** VIEW MOBILE DEVICE ** */

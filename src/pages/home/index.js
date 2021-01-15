@@ -8,7 +8,9 @@ function Home(){
         <div>
             <Header/>
             <div className="banner">
-
+                <div className="">
+                    <h1>A MAIOR REDE DE BARBEIROS DO BRASIL</h1>
+                </div>
             </div>
         </div>
     );
