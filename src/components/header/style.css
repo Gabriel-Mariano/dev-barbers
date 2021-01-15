@@ -32,7 +32,8 @@ header span{
     letter-spacing: 2px;
 }
 
-header button{
+
+#button-open{
     width:60px;
     height:35px;
     background: none;
@@ -43,6 +44,12 @@ header button{
 }
 
 #button-close{
+    width:60px;
+    height:35px;
+    background: none;
+    border: none;
+    cursor:pointer;
+    outline: none;
     display: none;
 }
 
@@ -81,7 +88,7 @@ header button{
 /* ** VIEW MOBILE DEVICE ** */
 @media (max-width:1024px){
     header img{
-        margin-left: 30px;
+        margin-left: 0;
     }
 
     header span{
@@ -89,11 +96,21 @@ header button{
         transition: ease-in-out 0.2s;
     }
 
+    .menu-principal{
+        justify-content: flex-end;
+    }
+
     .menu-principal ul{
         display: none;
     }
 
-    header button{
+    #button-open{
         display: initial;
+        margin-right:20px;    
+    }
+
+    #button-close{
+        display: initial;
+        margin-right:20px;    
     }
 }
