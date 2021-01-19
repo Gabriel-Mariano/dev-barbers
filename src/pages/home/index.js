@@ -1,6 +1,8 @@
 import React from 'react';
 import './style.css';
 
+import {TiScissorsOutline} from 'react-icons/ti';
+import Iphone from '../../assets/iphone.png';
 
 import Header from '../../components/header';
 
@@ -8,12 +10,34 @@ function Home(){
     return(
         <div>
             <Header/>
-            <div className="banner">
+            <section className="banner">
                 <div className="content-banner">
                     <h1>A MAIOR REDE DE BARBEIROS DO BRASIL</h1>
-                    <h2></h2>
+                    <h2>Encontre o melhor serviço prestado, favorite o seu barbeiro predileto.</h2>  
                 </div>
-            </div>
+                <a href="#" className="more-info">
+                        SAIBA MAIS 
+                        <TiScissorsOutline size={30} style={{marginLeft:10}}></TiScissorsOutline>
+                </a>
+            </section>
+            <section className="info-app">
+                <div>
+                    <h1>NOSSO APP</h1>
+                    <img src={Iphone} alt="Iphone"/>
+                </div>
+                <div>
+                    <h2>APLICATIVO DEV BABERS</h2>
+                    <span>
+                    Com nosso aplicativo você pode:
+                    Agendar horários com nossos barbeiros;
+                    Favoritar seu barbeiro preferido;
+                    Mais comodidade e uma busca mais precisa dos barbeiros da sua região!
+                    </span>
+                </div>
+                <figure>
+                  
+                </figure>
+            </section>
         </div>
     );
 }

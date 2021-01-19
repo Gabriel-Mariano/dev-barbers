@@ -22,7 +22,7 @@ function Header(){
                 {/*    <span>DEV/BARBERS</span> */}
                 </figcaption>
             </figure>
-            <button className="" id="button-open" onClick={openMenu}>
+            <button id="button-open" onClick={openMenu}>
                     <FaBars color="#FFF" size={24} ></FaBars>
             </button> 
            <nav className="menu-principal" style={
@@ -30,26 +30,10 @@ function Header(){
                    display:'initial'
                    
                } : {
-                   
+                   display:'none'
                }
-           }>
-               {
-                   /*
-                   activeMenu === false ?
-                    <button className="" id="button-open" onClick={openMenu}>
-                        <FaBars color="#FFF" size={24} ></FaBars>
-                    </button> 
-                    
-                    :
-
-                    <button className="" id="button-close" onClick={closeMenu}>
-                        <MdClose color="#FFF" size={24}></MdClose>
-                    </button>
-
-                    */
-               }
-               
-               <button className="" id="button-close" onClick={closeMenu}>
+           }> 
+               <button id="button-close" onClick={closeMenu}>
                     <MdClose color="#FFF" size={34}></MdClose>
                </button>
                <ul>
