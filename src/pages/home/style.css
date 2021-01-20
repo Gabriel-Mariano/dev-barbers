@@ -94,15 +94,33 @@ h2{
 }
 
 .container-about{
-    text-align: center;
+    float: left;
+    width: 100%;
     background-color: #ffffff;
     
 }
+
+.container-about div{
+    float: left;
+    width:80%;
+    margin: auto 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .container-about h1{
+    text-align: center;
     color:rgba(215, 40, 40, 0.9);
     text-shadow: none;
     margin-top: 60px;
 }
+
+.container-about img{
+    width:100%;
+    height: 100%;
+}
+
 
 
 
@@ -122,6 +140,9 @@ h2{
         margin:auto 0%;
     }
 
-
+    .container-about img{
+        width:650px;
+        height: 450px;
+    }
 
 }

@@ -29,7 +29,7 @@ function Home(){
                     <img src={SmartArt} alt="SmartPhone"/>
                 </div>
                 <div>
-                    <h2>APLICATIVO DEV BABERS</h2>
+                    <h2>BAIXE NOSSO APP - BABERS</h2>
                     <span>
                     Com nosso aplicativo você pode:
                     Agendar horários com nossos barbeiros;
@@ -42,8 +42,10 @@ function Home(){
                 </figure>
             </section>
             <section className="container-about">
-                <h1>ENCONTRE SEU BARBEIRO</h1>
-                <img src={Search} alt="location"/>
+                <div>
+                    <h1>ENCONTRE SEU BARBEIRO</h1>
+                    <img src={Search} alt="location"/>
+                </div>
             </section>
             
         </div>
