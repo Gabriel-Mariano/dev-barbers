@@ -2,9 +2,12 @@ import React from 'react';
 import './style.css';
 
 import {TiScissorsOutline} from 'react-icons/ti';
-import Iphone from '../../assets/iphone.png';
+import SmartArt from '../../assets/smart-art.png';
+
+import Search from '../../assets/location.gif';
 
 import Header from '../../components/header';
+
 
 function Home(){
     return(
@@ -23,7 +26,7 @@ function Home(){
             <section className="info-app">
                 <div>
                     <h1>NOSSO APP</h1>
-                    <img src={Iphone} alt="Iphone"/>
+                    <img src={SmartArt} alt="SmartPhone"/>
                 </div>
                 <div>
                     <h2>APLICATIVO DEV BABERS</h2>
@@ -38,6 +41,11 @@ function Home(){
                   
                 </figure>
             </section>
+            <section className="container-about">
+                <h1>ENCONTRE SEU BARBEIRO</h1>
+                <img src={Search} alt="location"/>
+            </section>
+            
         </div>
     );
 }
