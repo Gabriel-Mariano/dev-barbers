@@ -1,18 +1,30 @@
-import React, { useState } from 'react';
-import {FaBars} from 'react-icons/fa';
+import React, { useContext, useState } from 'react';
+import {FaBars, FaToggleOff, FaToggleOn} from 'react-icons/fa';
 import {MdClose} from 'react-icons/md';
+
+import {MyContext} from '../../contexts';
 
 import Logo from '../../assets/identidadeVisualTransparent.png';
 import './style.css';
 
 function Header(){
     const [activeMenu,SetActiveMenu] = useState(false);
+    const {theme,SetTheme} = useContext(MyContext);
 
     function openMenu(){
         SetActiveMenu(true);
     }
     function closeMenu(){
         SetActiveMenu(false);
+    }
+
+    function toogleTheme(){
+        if(theme === 'light'){
+            SetTheme('dark');
+        }else{
+            SetTheme('light');
+        }
+        
     }
     return(
         <header>
@@ -40,6 +52,13 @@ function Header(){
                    <li><a href="#">HOME</a></li>
                    <li><a href="#">SOBRE</a></li>
                    <li><a href="#">NOSSO APP</a></li>
+                   <li onClick={toogleTheme}>
+                    { theme === 'light' ?
+                        <FaToggleOff size={25} color="#fff"/>
+                            :
+                        <FaToggleOn size={25} color="#fff"/>
+                    }
+                   </li>
                </ul>
             </nav>         
         </header>

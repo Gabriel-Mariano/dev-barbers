@@ -1,10 +1,16 @@
+import React from 'react';
 import Routes from './routes';
+import Context  from './contexts';
 import './App.css';
+
+
 
 function App() {
   return (
     <div>
-      <Routes/>
+      <Context>
+          <Routes/>
+      </Context>
     </div>
   );
 }
