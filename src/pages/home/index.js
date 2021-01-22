@@ -7,6 +7,7 @@ import SmartArt from '../../assets/smart-art02.png';
 import GooglePlayLogo from '../../assets/google-play.png';
 
 import Header from '../../components/header';
+import Footer from '../../components/footer';
 import { MyContext } from '../../contexts';
 
 
@@ -26,47 +27,40 @@ function Home(){
                         <TiScissorsOutline size={30} style={{marginLeft:10}}></TiScissorsOutline>
                 </a>
             </section>
-            <section className="info-app" style={ theme === 'light' ? {
-                    background:'#f8f8f8'
+            <section className="container-app" style={ theme === 'light' ? {
+                    background:'#f8f8f8',
                 }
                 :
                 {
-                    background:'#000'
+                    background:'-webkit-gradient(linear, 28% 78%, 29% 28%, from(#000000), to(#070C18))'
                 }
                 }>
                 <div>
                     <h1>NOSSO APP</h1>
                     <img src={SmartArt} alt="SmartPhone"/>
                 </div>
-                <div className="content-info-app">
-                    <hgroup>
-                        <h2>Baixe nosso App - Barbers</h2>
-                        <h3>Com nosso aplicativo você pode:</h3>
-                    </hgroup>
-                    <ul>
-                        <li>Agendar horários com nossos barbeiros</li>
-                        <li>Favoritar seu barbeiro preferido</li>
-                        <li>Mais comodidade e uma busca mais precisa dos barbeiros da sua região!</li>
-                    </ul>
-                    <br/>
-                    <a href="https://play.google.com/store">
-                        <img  src={GooglePlayLogo} alt="logo-googleplay" id="icons-store"/>
-                    </a>
+                <div className="container-content-app">
+                    <div>
+                        <hgroup>
+                            <h2>Baixe nosso App - Barbers</h2>
+                            <h3>Com nosso aplicativo você pode:</h3>
+                        </hgroup>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Agendar horários com nossos barbeiros.</li>
+                            <li>Favoritar seu barbeiro preferido.</li>
+                            <li>Mais comodidade e uma busca mais precisa dos barbeiros da sua região!</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="https://play.google.com/store">
+                            <img  src={GooglePlayLogo} alt="logo-googleplay" id="icons-store"/>
+                        </a>
+                    </div>
                 </div>
             </section>
-            <section className="container-about" style={ theme === 'light' ? {
-                    background:'#f8f8f8'
-                }
-                :
-                {
-                    background:'#000'
-                }
-            }>
-                <div>
-                    <h1>ENCONTRE SEU BARBEIRO</h1>
-                    
-                </div>
-            </section>
+            <Footer/>
             
         </div>
     );

@@ -54,104 +54,66 @@ h2{
     transition: ease-in-out 1s;
 }
 
-.info-app{
+
+
+.container-app{
     float: left;
-    width: 100%;
-    text-align: center; 
+    width:100%;
 
-}
-
-
-.content-info-app{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
 }
 
-.content-info-app hgroup{
-    float: left;
-    width: 100%;
+.container-app div{
+    width:80%;
+    margin:20px 10%;
+    transition: ease-in-out 2s;
 }
 
-.info-app h1{
+.container-app h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3em;
+    text-shadow: none;
+    text-align: center;
     color:rgba(215, 40, 40, 0.9);
-    text-shadow: none;
-    margin-top: 60px;
 }
 
-.content-info-app hgroup h2{
-    font-family: century gothic;
-    text-shadow: none;
-    margin:10px auto 0 auto;
+.container-app img{
+    width: 100%;
+    height: 100%;
 }
 
-.content-info-app hgroup h3{
+.container-content-app{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container-content-app  hgroup h2{
     font-family: century gothic;
     font-size: 1.5em;
-    color:#696969;
     text-shadow: none;
-}
-
-
-.content-info-app li{
-    float: left;
-    font-family: century gothic;
-    font-size: 1em;
-    color:#696969;
-    text-align: start;
-    text-shadow: none;
-    margin:10px auto;
-}
-
-
-.info-app img{
-    width:100%;
-    height:100%;
-    margin:60px 0;
-}
-
-#icons-store{
-    margin: 0;
-    width: 320px;
-    height:120px;
-}
-
-.info-app h2{
-    font-family: century gothic;
     color:rgba(215, 40, 40, 0.9);
+}
+
+.container-content-app  hgroup h3{
+    font-family: century gothic;
+    font-size: 1.5em;
     text-shadow: none;
+    text-align: center;
+    color:#828282;
 }
 
-.info-app span{
-    font-family: century gothic, calibri;
-    font-size: 1.3em;
-    color:#696969;
+.container-content-app li{
+    font-family: century gothic;
+    font-size: 1.1em;
+    margin:20px 0px;
     text-align: justify;
+    color:#828282;
 }
 
-.info-app div{
-    width:80%;
-    margin:auto 10%;
-    
-}
 
-.container-about{
-    float: left;
-    width: 100%;
-    
-    
-}
 
-.container-about div{
-    float: left;
-    width:80%;
-    margin: auto 10%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 .container-about h1{
     text-align: center;
@@ -184,9 +146,47 @@ h2{
         margin:auto 0%;
     }
 
-    .container-about img{
-        width:650px;
+
+    .container-app{
+        flex-direction: row;
+        
+    }
+    
+    .container-app div{
+        float: left;
+        margin:20px 0px;
+    }
+
+
+
+    .container-app img{
+        width: 650px;
         height: 450px;
     }
+
+    
+.container-content-app{
+    align-items: left;
+}
+
+.container-content-app  hgroup h2{
+    font-size: 2.1em;
+    text-align: left;
+    margin:0 auto;
+}
+
+.container-content-app  hgroup h3{
+    text-align: left;
+    margin:12px auto;
+}
+
+.container-content-app a img{
+    margin:0;
+    width: 320px;
+    height: 120px;  
+    
+}
+
+
 
 }
